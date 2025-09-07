@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>My To-Do List</h1>
+        <form id="add-task-form" class="add-task-form">
+            <label for="new-task">Add new task:</label>
+            <input type="text" id="new-task" name="new-task" placeholder="Enter a new task">
+            <button type="submit" class="add-button">Add Task</button>
+        </form>
+        <ul class="todo-list" role="list">
+            <li>
+                <div class="task-item">
+                    <input type="checkbox" name="input1" id="1" aria-label="Mark task as complete">
+                    <label for="1">Explore gaming keyboards</label>
+                </div>
+                <ul class="sub-item" role="list">
+                    <li><a href="#" class="sub-item-link" target="_blank" rel="noopener">Store link</a></li>
+                </ul>
+            </li>
+            <li><input type="checkbox" name="input2" id="2"><label for="2">Finish the report</label>
+                <ul class="sub-item">
+                    <li><a href="#" class="sub-item-link" target="_blank">Request Access</a></li>
+                </ul>
+            </li>
+            <li><input type="checkbox" name="input3" id="3"><label for="3">View Phone's Warranty</label>
+                <ul class="sub-item">
+                    <li><a href="#" class="sub-item-link" target="_blank">View Receipts</a></li>
+                </ul>
+            </li>
+            <li><input type="checkbox" name="input4" id="4"><label for="4">Check Processor Specs</label>
+                <ul class="sub-item">
+                    <li><a href="#" class="sub-item-link" target="_blank">Model Number</a></li>
+                </ul>
+        </li>
+        </ul>
+    </main>    
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    background-color: rosybrown;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.profile-image {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.business-card {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 100px auto 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.full-name, .designation, .company {
+    font-style: normal;
+}
+
+/* Keeping some beneficial styles */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid rosybrown;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+
+.social-media h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    margin: 5px 0;
+}

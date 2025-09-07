@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive catalogue of programming and technology books featuring titles from various authors across different domains.">
+    <title>Programming Book Catalog</title>
+</head>
+<body>
+    <main>
+        <header role="banner">
+            <h1>Programming Book Catalog</h1>
+            <p>Browse our collection of programming and technology books</p>
+        </header>
+
+        <section aria-labelledby="book-catalog">
+            <h2 id="book-catalog" class="sr-only">Book List</h2>
+            <table role="grid" aria-label="Programming Books Catalog">
+                <caption>Available Programming Books</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col">Publication Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">How to Contribute to Open-Source Projects – A Handbook for Beginners</th>
+                        <td>Hillary Nyakundi</td>
+                        <td>Open Source</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Learn Linux for Beginners: From Basics to Advanced Techniques</th>
+                        <td>Zaira Haira</td>
+                        <td>Linux</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">How to Learn to Code and Get a Developer Job</th>
+                        <td>Quincy Larson</td>
+                        <td>Learn To Code</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">The Regular Expressions Book – RegEx for JavaScript Developers</th>
+                        <td>Kolade Chris</td>
+                        <td>Regular Expressions</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">The Python Code Example Handbook</th>
+                        <td>Farhan Hasin Chowdhury</td>
+                        <td>Python</td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" aria-label="Total number of books">Total Books: 5</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <aside aria-labelledby="filter-heading">
+            <h2 id="filter-heading">Filter Books</h2>
+            <form role="search">
+                <label for="search">Search books:</label>
+                <input type="search" id="search" name="search" aria-label="Search through book catalog">
+                
+                <label for="year">Filter by year:</label>
+                <select id="year" name="year">
+                    <option value="">All Years</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                </select>
+                
+                <label for="genre">Filter by genre:</label>
+                <select id="genre" name="genre">
+                    <option value="">All Genres</option>
+                    <option value="open-source">Open Source</option>
+                    <option value="linux">Linux</option>
+                    <option value="coding">Learn To Code</option>
+                    <option value="regex">Regular Expressions</option>
+                    <option value="python">Python</option>
+                </select>
+            </form>
+        </aside>
+    </main>
+</body>
+</html>

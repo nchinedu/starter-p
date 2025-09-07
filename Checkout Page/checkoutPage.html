@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure checkout page for purchasing the Metallic Puzzle Cube - Complete your order with our easy-to-use payment system.">
+    <title>Checkout - Metallic Puzzle Cube</title>
+</head>
+<body>
+    <main>
+        <header role="banner">
+            <h1>Secure Checkout</h1>
+            <nav role="navigation" aria-label="Checkout steps">
+                <ol>
+                    <li aria-current="page">Cart Review</li>
+                    <li>Payment</li>
+                    <li>Confirmation</li>
+                </ol>
+            </nav>
+        </header>
+
+        <section aria-labelledby="cart-heading">
+            <h2 id="cart-heading">Your Cart</h2>
+            <figure role="group" aria-label="Product image and details">
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" 
+                     alt="Metallic rubik's cube with reflective surface and modern design"
+                     width="200" height="200">
+                <figcaption>Metallic Puzzle Cube</figcaption>
+            </figure>
+            <div role="group" aria-label="Product details">
+                <p aria-label="Price">Price: $29.99</p>
+                <p aria-label="Quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" aria-label="Product quantity">
+                </p>
+                <p aria-label="Total">Total: $29.99</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="payment-heading">
+            <h2 id="payment-heading">Payment Information</h2>
+            <form role="form" aria-label="Payment details form">
+                <div role="group" aria-labelledby="billing-address">
+                    <h3 id="billing-address">Billing Address</h3>
+                    <label for="email">Email Address</label>
+                    <input required type="email" id="email" name="email" autocomplete="email">
+                    
+                    <label for="address">Street Address</label>
+                    <input required type="text" id="address" name="address" autocomplete="street-address">
+                    
+                    <label for="city">City</label>
+                    <input required type="text" id="city" name="city" autocomplete="address-level2">
+                    
+                    <label for="country">Country</label>
+                    <select required id="country" name="country" autocomplete="country">
+                        <option value="">Select a country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="GB">United Kingdom</option>
+                    </select>
+                </div>
+
+                <div role="group" aria-labelledby="card-details">
+                    <h3 id="card-details">Card Details</h3>
+                    <label for="card-name">Cardholder Name</label>
+                    <input required type="text" id="card-name" name="card-name" autocomplete="cc-name" aria-required="true">
+                    
+                    <label for="card-number">Card Number</label>
+                    <input required type="text" id="card-number" name="card-number" 
+                           autocomplete="cc-number" pattern="[0-9]{16}" maxlength="16" 
+                           aria-required="true" aria-describedby="card-hint">
+                    <small id="card-hint">Enter 16-digit card number without spaces</small>
+                    
+                    <label for="expiry-date">Expiry Date</label>
+                    <input required type="month" id="expiry-date" name="expiry-date" 
+                           autocomplete="cc-exp" aria-required="true">
+                    
+                    <label for="cvv">CVV</label>
+                    <input required type="password" id="cvv" name="cvv" 
+                           inputmode="numeric" pattern="[0-9]{3,4}" maxlength="4" 
+                           aria-required="true" aria-describedby="cvv-hint">
+                    <small id="cvv-hint">3 or 4 digit security code</small>
+                </div>
+
+                <div role="group" aria-labelledby="order-summary">
+                    <h3 id="order-summary">Order Summary</h3>
+                    <p>Subtotal: $29.99</p>
+                    <p>Shipping: Free</p>
+                    <p>Total: $29.99</p>
+                </div>
+
+                <button type="submit" aria-label="Complete purchase">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>Secure payment powered by SSL encryption</p>
+        <p>Need help? Contact our <a href="#" aria-label="Contact customer support">customer support</a></p>
+    </footer>
+</body>
+</html> 
